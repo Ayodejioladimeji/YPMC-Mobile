@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287982949626",
+    "project_id": "root-quasar-449022-t9",
+    "storage_bucket": "root-quasar-449022-t9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287982949626:android:50bd7d4e6072d2f971a543",
+        "android_client_info": {
+          "package_name": "com.ypmc.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcSsh5-C52E_NvWNaJ5IursSnz7pxHSok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

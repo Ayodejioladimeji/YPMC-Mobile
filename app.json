@@ -1,0 +1,131 @@
+{
+  "expo": {
+    "name": "YPMC Mobile",
+    "slug": "ypmc-mobile",
+    "version": "1.0.8",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ypmc",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "ios": {
+      "infoPlist": {
+        "OneSignalAppId": "8c9df2c0-a719-4f09-aeb9-a27b640a74b7",
+        "photosPermission": "YPMC needs access to your Camera while using the app to take pictures for your profile",
+        "NSPhotoLibraryUsageDescription": "YPMC needs access to your Camera while using the app to take pictures for your profile",
+        "NSLocationWhenInUseUsageDescription": "YPMC needs location access to enhance real-time navigation and improve delivery accuracy.",
+        "NSLocationAlwaysUsageDescription": "YPMC needs location access to enhance real-time navigation and improve delivery accuracy.",
+        "NSCameraUsageDescription": "YPMC needs access to your Camera while using the app to take pictures for your profile.",
+        "NSPhotoLibraryAddUsageDescription": "YPMC needs access to save photos to your library.",
+        "UIBackgroundModes": ["fetch", "remote-notification", "location"],
+        "ITSAppUsesNonExemptEncryption": false,
+        "LSApplicationQueriesSchemes": ["whatsapp"]
+      },
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyC1vp3MApL7DRjIceY-W0oQ8Ud7shMpxIQ"
+      },
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.ypmc.mobile",
+      "buildNumber": "1",
+      "entitlements": {
+        "com.apple.security.application-groups": [
+          "group.com.ypmc.mobile",
+          "group.com.ypmc.mobile"
+        ]
+      }
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC1vp3MApL7DRjIceY-W0oQ8Ud7shMpxIQ"
+        }
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "POST_NOTIFICATIONS"
+      ],
+      "package": "com.ypmc.mobile",
+      "versionCode": 1,
+      "targetSdkVersion": 35
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ${PRODUCT_NAME} to use your Camera",
+          "NSPhotoLibraryUsageDescription": "Allow ${PRODUCT_NAME} to use your Camera"
+        }
+      ],
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "production"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "targetSdkVersion": 35
+          }
+        }
+      ],
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "oneSignalAppId": "8c9df2c0-a719-4f09-aeb9-a27b640a74b7",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "0ef3d2eb-6c3c-402e-958c-fc51eff2e5a3",
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "OneSignalNotificationServiceExtension",
+                  "bundleIdentifier": "com.ypmc.mobile.OneSignalNotificationServiceExtension",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.ypmc.mobile.onesignal"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "owner": "ypm_community"
+  }
+}
